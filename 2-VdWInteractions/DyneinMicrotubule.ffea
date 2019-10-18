@@ -1,0 +1,144 @@
+<param>
+	<restart = 0>
+
+	<dt = 1e-13>
+	<check = 10000>
+	<num_steps = 1e+7>
+
+	<trajectory_out_fname = output/DyneinMicrotubule.ftj>
+	<measurement_out_fname = output/DyneinMicrotubule.fm>
+	<checkpoint_in = DyneinMicrotubule_in.fcp>
+	<checkpoint_out = DyneinMicrotubule_out.fcp>
+
+
+	<calc_stokes = 1>
+	<calc_noise = 1>
+	<calc_vdw = 0>
+
+
+	<num_blobs = 13>
+</param>
+
+<system>
+	<blob>
+		<motion_state = DYNAMIC>
+		<topology = structure/dynein.top>
+		<material = structure/dynein.mat>
+		<stokes = structure/dynein.stokes>
+		<nodes = structure/dynein.node>
+		<surface = structure/dynein.surf>
+		<vdw = structure/dynein_MTBD.vdw>
+		<solver = CG_nomass>
+		<scale = 1.00e-10>
+		<rotation = (-20.00,63.00, 0.00)>
+		<centroid = (63.42,-277.85,242.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-192.86)>
+		<centroid = (-26.70,-116.99, 0.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-192.86)>
+		<centroid = (-26.70,-116.99,90.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-192.86)>
+		<centroid = (-26.70,-116.99,180.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-192.86)>
+		<centroid = (-26.70,-116.99,270.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-167.14)>
+		<centroid = (26.70,-116.99,-9.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-167.14)>
+		<centroid = (26.70,-116.99,81.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-167.14)>
+		<centroid = (26.70,-116.99,171.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-167.14)>
+		<centroid = (26.70,-116.99,261.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-141.43)>
+		<centroid = (74.82,-93.82,-18.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-141.43)>
+		<centroid = (74.82,-93.82,72.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-141.43)>
+		<centroid = (74.82,-93.82,162.00)>
+	</blob>
+	<blob>
+		<motion_state = STATIC>
+		<nodes = structure/tubulin.node>
+		<surface = structure/tubulin.surf>
+		<vdw = structure/tubulin_track.vdw>
+		<scale = 1.00e-10>
+		<rotation = ( 0.00, 0.00,-141.43)>
+		<centroid = (74.82,-93.82,252.00)>
+	</blob>
+</system>

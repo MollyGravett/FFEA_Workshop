@@ -1,0 +1,33 @@
+<param>
+	<restart = 0>
+
+	<dt = 1e-13>
+	<check = 1000>
+	<num_steps = 1e+5>
+
+	<trajectory_out_fname = output/DyneinMonomer.ftj>
+	<measurement_out_fname = output/DyneinMonomer.fm>
+	<checkpoint_in = DyneinMonomer_in.fcp>
+	<checkpoint_out = DyneinMonomer_out.fcp>
+
+
+	<calc_stokes = 1>
+	<calc_noise = 1>
+	<calc_vdw = 0>
+
+	<num_blobs = 1>
+</param>
+
+<system>
+	<blob>
+		<motion_state = DYNAMIC>
+		<topology = structure/dynein.top>
+		<material = structure/dynein.mat>
+		<stokes = structure/dynein.stokes>
+		<nodes = structure/dynein.node>
+		<surface = structure/dynein.surf>
+		<vdw = structure/dynein.vdw>
+		<solver = CG_nomass>
+		<scale = 1.00e-10>
+	</blob>
+</system>

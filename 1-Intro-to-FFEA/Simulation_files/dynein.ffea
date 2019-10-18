@@ -1,0 +1,38 @@
+<param>
+	<restart = 0>
+
+	<dt = 1e-13>
+	<check = 100>
+	<num_steps = 10000>
+
+	<trajectory_out_fname = dynein_out.ftj>
+	<measurement_out_fname = dynein_out.fm>
+	<checkpoint_in = dynein_in.fcp>
+	<checkpoint_out = dynein_out.fcp>
+
+	<vdw_forcefield_params = dynein.lj>
+
+	<calc_stokes = 1>
+
+
+	<calc_vdw = 1>
+	<inc_self_vdw = 0>
+	<vdw_type = ljsteric>
+
+	<calc_noise = 1>
+
+	<num_blobs = 1>
+</param>
+
+<system>
+	<blob>
+		<motion_state = DYNAMIC>
+		<topology = dynein.top>
+		<material = dynein.mat>
+		<stokes = dynein.stokes>
+		<nodes = dynein.node>
+		<surface = dynein.surf>
+		<vdw = dynein.vdw>
+		<scale = 1.00e-10>
+	</blob>
+</system>
